@@ -10,13 +10,16 @@
     <div class="container">
         <h1>Currency Converter</h1>
         <div class="form">
-            <input type="number" id="amount" placeholder="Amount" />
-            <input type="text" id="fromCurrency" placeholder="From Currency (e.g., USD)" />
-            <input type="text" id="toCurrency" placeholder="To Currency (e.g., EUR)" />
+            <input type="number" id="amount" placeholder="Enter amount" />
+            <select id="fromCurrency"></select>
+            <select id="toCurrency"></select>
             <button onclick="convertCurrency()">Convert</button>
+            <div id="loading" class="loading">Loading...</div>
         </div>
         <div id="result"></div>
+        <div id="error" class="error"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
